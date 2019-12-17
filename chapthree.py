@@ -56,3 +56,58 @@ import math
 #radians = (math.pi / 180) * angle
 #ladder = height / math.sin(radians)
 #print("That ladder was " + str(ladder) + " feet long!")
+
+#n = int(input("Okay please give me n: "))
+#sumn = (n * (n + 1)) / 2
+#print(str(sumn) + " is the sum of n natural numbers boom")
+
+#n = int(input("Okay please give me n: "))
+#sumn = ((n * (n + 1)) / 2) ** 2
+#print(str(sumn) + " is the sum of n natural numbers cubed boom")
+
+#n = int(input("Okay so how many numbers do you want to add up? "))
+#total = 0
+#for i in range(n):
+#        x = int(input("Okay then give me a number!"))
+#        total = total + x
+#print("Well this is your dang total, it's: " + str(total))
+
+#n = int(input("Okay so how many numbers do you want to average out? "))
+#total = 0
+#for i in range(n):
+#        x = int(input("Okay then give me a number!"))
+#        total = total + x
+#average = total / n
+#print("Well this is your dang average, it's: " + str(average))
+
+#n = int(input("Okay so how many terms do you want to sum I guess to approximate pi?"))
+#approxpi = 0
+#for i in range(n):
+#    if (i % 2 == 0):
+#        approxpi = approxpi + (4/(i + (i + 1)))
+#    else:
+#        approxpi = approxpi + ((-1) * (4/(i + (i + 1))))
+#
+#diff = math.pi - approxpi
+
+#print("Okay this is approximately pi: " + str(approxpi))
+#print(diff)
+#print(math.pi)
+
+#d = int(input("Okay lets do a dang fibonannci sequence, how many numbers? "))
+#a, b = 0, 1
+#for i in range(d):
+#    print(b)
+#    a, b = b, a+b
+
+v = int(input("What value do you want to find the exciting square root of? "))
+d = int(input("How many guess shots you get? "))
+guess = v / 2
+for i in range(d):
+       guess = (guess + (v / guess)) / 2
+print(guess)
+
+diff = math.sqrt(v) - guess
+print(math.sqrt(v), guess, diff)
+
+
