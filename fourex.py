@@ -14,5 +14,8 @@ def main():
         newshape.setOutline("red")
         newshape.setFill("red")
         newshape.draw(win)
+    vx = Text(Point(100,100), "SMELL YOU LATER")
+    vx.draw(win)
+    vs = win.getMouse()
     win.close()
 main()

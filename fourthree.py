@@ -1,0 +1,26 @@
+from graphics import *
+
+def main():
+    win = GraphWin()
+    hair = Circle(Point(100,65), 75)
+    hair.setFill("brown")
+    hair.draw(win)
+    face = Circle(Point(100,100), 50)
+    face.setOutline("black")
+    face.setFill("white")
+    face.draw(win)
+    leye = Circle(Point(80,75), 10)
+    reye = Circle(Point(120,75), 10)
+    leye.setFill("blue")
+    reye.setFill("blue")
+    leye.draw(win)
+    reye.draw(win)
+    mouth = Circle(Point(100,120), 10)
+    mouth.setOutline("black")
+    mouth.setFill("black")
+    mouth.draw(win)
+    nose = Polygon(Point(100,65), Point(85,105), Point(115,105))
+    nose.setFill("red")
+    nose.draw(win)
+
+main()
