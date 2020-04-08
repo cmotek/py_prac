@@ -28,12 +28,6 @@ def main():
 
     countlist = [zeroes, ones, twos, threes, fours, fives, sixes, sevens, eights, nines, tens]
 
-    #x = 49
-    #y = 82
-
-    #point1 = (49,82)
-    #point2 = (52,82)
-
     print(countlist)
     x = 49
 
@@ -43,19 +37,6 @@ def main():
         bar.draw(win)
         x = x + 10
         
-        #print(point1,point2, i)
-        #point1 = point1.move(0,5)
-        #print(point1)
-        #print(point1.move(0,i))
-        #point1.move(0,int(i))
-        #point2.move(0,int(i))
-        #bar = Rectangle(point1,Point(,))
-        #bar = bar.move(0,5)
-        #print(bar)
-        #bar.setWidth(4)
-        #bar.setFill('black')
-        #bar.draw(win)
-        #bar.move(5,i)
 
 
 
