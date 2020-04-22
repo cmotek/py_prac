@@ -24,15 +24,22 @@ def main():
     #    print(runningt)
     #    print(total)
 
-    ninetynum = 0
 
+
+    #ninetynum = 0
+    #while ninetynum <= 999:
+    #    addnumber = int(input("Give me a number to add up until 999:"))
+    #    if addnumber == 999:
+    #        pass
+    #      else:
+    #       ninetynum = ninetynum + addnumber
     
+        
 
-
-
-
-
-
+    yournumber = int(input("Give me a number to test by integer division:"))
+    while yournumber != 1:
+        yournumber = yournumber // 2
+        print(yournumber)
 
 
 main()
