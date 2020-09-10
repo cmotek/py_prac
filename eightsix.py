@@ -11,45 +11,25 @@ def main():
 
     primelist = []
 
-    for i in range(startnumber):
+    primetest = 2
 
-        print(i)
-        while primecount <= math.sqrt(i):
+    while primecount <= (startnumber):
 
-            if i % primecount != 0:
+        print(primecount)
+
+        while primetest <= math.sqrt(primecount):
+
+            if primecount % primetest != 0:
+                primetest = primetest + 1
+            elif primecount % primetest == 0:
                 primecount = primecount + 1
-            elif i % primecount == 0:
-                print("This is not a prime number!")
-                pass
-
-        if primecount > math.sqrt(i):
-            primelist.append(i)
+                break
+            
+        if primetest > math.sqrt(primecount):
+            primelist.append(primecount)
+            primecount = primecount + 1
             print(primelist)
 
-                
-
-   # counter = 2
-
-   # while counter <= math.sqrt(startnumber):
-
-
-   #     if startnumber % counter != 0:
-   #         counter = counter + 1
-   #     elif startnumber % counter == 0:
-   #         print("This is not a prime number at all!")
-   #         break
-            
-   # if counter > math.sqrt(startnumber):
-   #     print("Holy moly it's a prime number")
-
-    
-
-      
-
-            
-
-
- 
 
 
 main()
