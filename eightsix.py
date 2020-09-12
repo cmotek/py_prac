@@ -11,11 +11,11 @@ def main():
 
     primelist = []
 
-    primetest = 2
+    while primecount <= startnumber:
 
-    while primecount <= (startnumber):
-
-        print(primecount)
+        primetest = 2
+        
+        print(primetest)
 
         while primetest <= math.sqrt(primecount):
 
@@ -24,12 +24,13 @@ def main():
             elif primecount % primetest == 0:
                 primecount = primecount + 1
                 break
+                
             
         if primetest > math.sqrt(primecount):
             primelist.append(primecount)
             primecount = primecount + 1
             print(primelist)
 
-
+    
 
 main()
