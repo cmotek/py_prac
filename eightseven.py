@@ -47,19 +47,22 @@ def main():
             secondprime = startnumber - firstprime
 
             print(secondprime)
+            primetest = 2
 
             while primetest <= math.sqrt(secondprime):
 
                 if secondprime % primetest != 0:
                     primetest = primetest + 1
                 elif secondprime % primetest == 0:
-                    secondprime = secondprime + 1
+                    primelist.clear()
                     break
         
             if primetest > math.sqrt(secondprime):
                 primelist.append(secondprime)
                 print(primelist)
-
+                break
+            else:
+                primecount = primecount + 1
 
 
 
