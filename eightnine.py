@@ -9,26 +9,20 @@ def main():
     legtotal = 0
     gastotal = 0 
     mpglist = []
-    legsection = "maleg"
+    
+    moredata = "Yes"
 
-    while legsection != "":
-        legsection, gasoline = input("What's your total miles for this trip and how much gas did you use?: ")
-        if legsection == "":
-            break
-        legsection = legsection
-        gasoline = gasoline
+    while moredata == "Yes":
+        legsection, gasoline = eval(input("What's your total miles for this trip and how much gas did you use?: "))
+        
         leglength = legsection - initodometer
-        initodometer = initodometer + legsection
+        initodometer = initodometer + leglength
         mpg = leglength / gasoline
         mpglist.append(mpg)
         legtotal = legtotal + leglength
         gastotal = gastotal + gasoline
+        moredata = input("Do you have more data? (say Yes if Yes):")
      
-
-        
-
-       
-        
 
         
 
